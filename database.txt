@@ -1,0 +1,29 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+id - intero - MEDIUMINT - PRIMARY KEY - AUTO_INCREMENT
+marca - stringa - VARCHAR(20) - NOTNULL
+nome_modello - stringa - VARCHAR(70) - [numero preso dal modello di auto più lungo disponibile] - NOTNULL
+anno_modello - string - VARCHAR(9) - [2001-2002] - NOTNULL
+immatricolazione - data - DATE - [YYYY-MM-DD] - NOTNULL
+alimentazione - stringa - VARCHAR(20) - NOTNULL
+km_percorsi - intero - MEDIUMINT - NOTNULL
+costo - intero - MEDIUMINT - NOTNULL
+carrozzeria - stringa - VARCHAR(10) [BERLINA/SUV] - NOTNULL
+serbatoio - float - TINYINT - NOTNULL
+cambio - stringa - VARCHAR(10) - NOTNULL
+peso - intero - SMALL - NOTNULL
+cilindrata - float - SMALL - NOTNULL
+kWatt - intero - SMALL  - NULL
+cavalli - intero - SMALL - NOTNULL
+trazione - stringa - VARCHAR(10) - NOTNULL
+porte - intero - TINYINT - NOTNULL
+posti - intero - TINYINT - NOTNULL
+colore_esterno - stringa - VARCHAR(40) - NOTNULL
+colore_interno - stringa - VARCHAR(40) - NOTNULL
+categoria_emissione - stringa - VARCHAR(7) - NOTNULL
+emissioni_co2_100km - float - FLOAT(2, 1) - NOTNULL
+consumo_urbano_100km - float - FLOAT(2, 1) - NOTNULL
+consumo_extraurbano_100km - float - FLOAT(2, 1) - NOTNULL
+consumo_misto_100km - float - FLOAT(2, 1) - NOTNULL
+eq_serie - stringa - TEXT - NOTNULL
+eq_optional - stringa - TEXT - NULL
